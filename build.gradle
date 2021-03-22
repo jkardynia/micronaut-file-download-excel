@@ -3,7 +3,7 @@ plugins {
     id 'org.asciidoctor.jvm.convert' version '2.3.0'
 }
 
-apply from:"https://raw.githubusercontent.com/micronaut-projects/micronaut-guides/master/gradle/guide-build.gradle"
+apply from:"file:guide-build.gradle"
 
 htmlSanityCheck {
     sourceDir = new File("${project.buildDir}/docs")
